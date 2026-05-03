@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/utils.ts","./src/vite-env.d.ts","./src/api/archiveapi.ts","./src/components/compressionoptions.tsx","./src/components/filepicker.tsx","./src/components/modeselector.tsx","./src/components/passwordoptions.tsx","./src/components/resultsummary.tsx","./src/types/archive.ts"],"version":"5.9.3"}
