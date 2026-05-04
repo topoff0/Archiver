@@ -38,6 +38,9 @@ pnpm dev
 docker compose up --build
 ```
 
+Перед запуском backend запускается одноразовый сервис `backend-tests`.
+Если unit-тесты падают, backend и frontend не будут подняты.
+
 После запуска:
 
 - frontend: `http://localhost:5173`

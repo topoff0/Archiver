@@ -1,10 +1,19 @@
 services:
+  backend-tests:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: test
+
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:8080
+    depends_on:
+      backend-tests:
+        condition: service_completed_successfully
     ports:
       - "8080:8080"
 

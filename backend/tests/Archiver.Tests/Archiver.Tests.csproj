@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Archiver.Application">
+      <HintPath>..\..\src\Archiver.Application\bin\$(Configuration)\net8.0\Archiver.Application.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Archiver.Domain">
+      <HintPath>..\..\src\Archiver.Domain\bin\$(Configuration)\net8.0\Archiver.Domain.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
