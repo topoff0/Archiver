@@ -20,7 +20,7 @@ cd backend
 dotnet run --project src/Archiver.Api
 ```
 
-API будет доступно на `http://localhost:5000`.
+API будет доступно на `http://localhost:8080`.
 
 ## Запуск frontend
 
@@ -31,6 +31,17 @@ pnpm dev
 ```
 
 Интерфейс будет доступен на `http://localhost:5173`.
+
+## Запуск через Docker
+
+```bash
+docker compose up --build
+```
+
+После запуска:
+
+- frontend: `http://localhost:5173`
+- backend API: `http://localhost:8080`
 
 ## API
 

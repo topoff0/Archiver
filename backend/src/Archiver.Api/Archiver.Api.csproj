@@ -10,7 +10,7 @@
       <Private>true</Private>
     </Reference>
   </ItemGroup>
-  <Target Name="BuildApplicationProject" BeforeTargets="ResolveReferences">
+  <Target Name="BuildApplicationProject" BeforeTargets="ResolveAssemblyReferences">
     <MSBuild
       Projects="..\Archiver.Application\Archiver.Application.csproj"
       Targets="Build"
